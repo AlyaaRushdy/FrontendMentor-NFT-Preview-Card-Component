@@ -1,7 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
 /* || VARIABLES */
 :root {
   /* || COLORS */
+  --text-soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg-blue: hsl(217, 54%, 11%);
+  --card-bg-blue: hsl(216, 50%, 16%);
+  --line-blue: hsl(215, 32%, 27%);
+  --headings-white: hsl(0, 0%, 100%);
   --footer-link: hsl(228, 45%, 44%);
+
+  /* || TYPOGRAPHY */
+  --font-family: "Outfit", sans-serif;
+  --font-size: 18px;
+  --small-font-weight: 300;
+  --normal-font-weight: 400;
+  --large-font-weight: 600;
 }
 
 /* Footer Styling */
