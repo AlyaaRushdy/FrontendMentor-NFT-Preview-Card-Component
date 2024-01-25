@@ -10,12 +10,12 @@
 /* || VARIABLES */
 :root {
   /* || COLORS */
-  --text-soft-blue: hsl(215, 51%, 70%);
-  --cyan: hsl(178, 100%, 50%);
-  --main-bg-blue: hsl(217, 54%, 11%);
   --card-bg-blue: hsl(216, 50%, 16%);
+  --cyan: hsl(178, 100%, 50%);
   --line-blue: hsl(215, 32%, 27%);
-  --headings-white: hsl(0, 0%, 100%);
+  --main-bg-blue: hsl(217, 54%, 11%);
+  --text-soft-blue: hsl(215, 51%, 70%);
+  --text-white: hsl(0, 0%, 100%);
   --footer-link: hsl(228, 45%, 44%);
 
   /* || TYPOGRAPHY */
@@ -35,6 +35,83 @@
   cursor: pointer;
 }
 
+/* || GENERAL STYLING */
+body {
+  min-height: 100vh;
+
+  color: var(--text-soft-blue);
+  background-color: var(--main-bg-blue);
+
+  font: var(--small-font-weight) var(--font-size) var(--font-family);
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* card styling */
+.card {
+  width: clamp(18rem, 90vw, 22rem);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--card-bg-blue);
+  /* box-shadow: 0px 0px 0px 10px var(--); */
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+.card__img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+.card__h1 {
+  color: var(--text-white);
+  font-size: 1.5em;
+  font-weight: var(--large-font-weight);
+}
+
+.card__section {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.hr {
+  background-color: var(--text-soft-blue);
+  height: 0.5px;
+  opacity: 0.5;
+}
+/* pricing section */
+.card__section--pricing {
+  justify-content: space-between;
+}
+.pricing__component {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pricing__component:first-of-type {
+  color: var(--cyan);
+  font-weight: var(--large-font-weight);
+}
+/* creator section */
+.card__section--creator {
+  align-items: center;
+  gap: 1rem;
+}
+.creator__img {
+  width: 2rem;
+  height: auto;
+  border: 1px solid var(--text-white);
+  border-radius: 50%;
+}
+.creator__a {
+  color: var(--text-white);
+  font-weight: var(--normal-font-weight);
+  text-decoration: none;
+}
 /* Footer Styling */
 .footer {
   position: absolute;
