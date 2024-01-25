@@ -1,0 +1,15 @@
+/* || VARIABLES */
+:root {
+  /* || COLORS */
+  --footer-link: hsl(228, 45%, 44%);
+}
+
+/* Footer Styling */
+.footer {
+  position: absolute;
+  bottom: 5px;
+  font-size: 11px;
+}
+.footer a {
+  color: var(--footer-link);
+}
