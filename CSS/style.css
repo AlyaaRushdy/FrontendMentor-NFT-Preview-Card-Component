@@ -19,6 +19,15 @@
   --large-font-weight: 600;
 }
 
+/* || UTILITY CLASSES */
+.no-wrap {
+  white-space: nowrap;
+}
+.text-hover:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
 /* Footer Styling */
 .footer {
   position: absolute;
